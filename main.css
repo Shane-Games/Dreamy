@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    background: #5d54a4;
+    color: #d789d7;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.svg{
+    position: absolute;
+}
+.glitch {
+
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.glitch:before, .glitch:after {
+    display: block;
+    content: 'Dreamy';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+.glitch:after {
+    color: #f0f;
+    z-index: -2;
+}
+.glitch:before {
+    color: #0ff;
+    z-index: -1;
+}
+.glitch:hover:before {
+    animation: glitch 1s cubic-bezier(0.25, 0.36, 0.45, 0.94) both infinite;
+}
+.glitch:hover:after {
+    animation: glitch 1s cubic-bezier(0.25, 0.36, 0.45, 0.94) reverse both infinite;
+}
+@keyframes glitch {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+   }
+    20% {
+        -webkit-transform: translate(-3px, 3px);
+        transform: translate(-3px, 3px);
+   }
+    40% {
+        -webkit-transform: translate(-3px, -3px);
+        transform: translate(-3px, -3px);
+   }
+    60% {
+        -webkit-transform: translate(3px, 3px);
+        transform: translate(3px, 3px);
+   }
+    80% {
+        -webkit-transform: translate(3px, -3px);
+        transform: translate(3px, -3px);
+   }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+   }
+}
+
+
+.glitchDesc {
+
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.glitchDesc:before, .glitchDesc:after {
+    display: block;
+    content: 'A small experiment.';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+.glitchDesc:after {
+    color: #f0f;
+    z-index: -2;
+}
+.glitchDesc:before {
+    color: #0ff;
+    z-index: -1;
+}
+.glitchDesc:hover:before {
+    animation: glitchDesc 1s cubic-bezier(0.25, 0.36, 0.45, 0.94) both infinite;
+}
+.glitchDesc:hover:after {
+    animation: glitchDesc 1s cubic-bezier(0.25, 0.36, 0.45, 0.94) reverse both infinite;
+}
+@keyframes glitchDesc {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+   }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+   }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+   }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+   }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+   }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+   }
+}
+
+footer{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer a{
+    color: white;
+    font-family: 'Roboto', sans-serif;    
+    text-decoration: none;
+}
+
+span a{
+    
+}
